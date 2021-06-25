@@ -51,6 +51,7 @@
 
         <EditText
             android:layout_width="match_parent"
+            android:id="@+id/nameentry"
             android:layout_height="@dimen/_50sdp"
             android:background="@drawable/shape_rectangle"
             android:fontFamily="@font/roboto_light"
@@ -77,6 +78,7 @@
 
         <EditText
             android:layout_width="match_parent"
+            android:id="@+id/phoneentry"
             android:layout_height="@dimen/_50sdp"
             android:background="@drawable/shape_rectangle"
             android:fontFamily="@font/roboto_light"
@@ -103,6 +105,7 @@
 
         <EditText
             android:layout_width="match_parent"
+            android:id="@+id/passwordentry"
             android:layout_height="@dimen/_50sdp"
             android:background="@drawable/shape_rectangle"
             android:fontFamily="@font/roboto_light"
