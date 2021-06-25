@@ -24,11 +24,14 @@ import soup.neumorphism.NeumorphButton;
 public class AdharVerification extends AppCompatActivity {
     private EditText mEtAadharNumber;
 
+
     View view;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adhar_verification);
+        Intent i=getIntent();
+
 
         mEtAadharNumber=findViewById(R.id.etAdharNumber);
 
@@ -49,7 +52,9 @@ public class AdharVerification extends AppCompatActivity {
                             handler1.postDelayed(new Runnable() {
                                 @Override
                                 public void run() {
-                                    startActivity(new Intent(AdharVerification.this,Welcome.class));
+                                    Intent i=new Intent(AdharVerification.this,Welcome.class);
+
+                                    startActivity(i);
                                 }
                             },2000);
                         }
