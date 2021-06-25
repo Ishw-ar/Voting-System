@@ -4,7 +4,7 @@
     <string name="create_account">Create Account</string>
     <string name="login_account">Login To Your Account</string>
     <string name="login">Login</string>
-
+    <string name="select_party">Select Your Party</string>
     <string name="new_user">New User?Create Your Account</string>
     <string name="click_here_to_vote_now">Click here to vote now</string>
     <string name="detect_face">Detect Face</string>
