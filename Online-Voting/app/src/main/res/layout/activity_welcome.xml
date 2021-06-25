@@ -30,7 +30,9 @@
     <soup.neumorphism.NeumorphButton
         android:layout_marginTop="@dimen/_40sdp"
         style="@style/Widget.Neumorph.Button"
+        android:id="@+id/btnCreateAccountWelcome"
         android:layout_width="match_parent"
+        android:fontFamily="@font/roboto_bold"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_30sdp"
         android:layout_marginEnd="@dimen/_30sdp"
@@ -58,6 +60,7 @@
         android:layout_marginStart="@dimen/_30sdp"
         android:layout_marginEnd="@dimen/_30sdp"
         app:neumorph_shadowElevation="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_bold"
         android:background="#ebf2f0"
         android:padding="@dimen/_15sdp"
         android:text="AlREADY HAVE AN ACCOUNT? LOGIN"
