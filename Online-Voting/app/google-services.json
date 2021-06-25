@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "966537647620",
+    "project_id": "online-voting-fec8b",
+    "storage_bucket": "online-voting-fec8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966537647620:android:f900f7c7094d38fa084751",
+        "android_client_info": {
+          "package_name": "com.masai.online_voting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966537647620-0vliuetnorr6jd80ij3so7c09r1jr54p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-y6oocQVt4WXhKtW6O7ZiK9WUkxbizdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966537647620-0vliuetnorr6jd80ij3so7c09r1jr54p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
