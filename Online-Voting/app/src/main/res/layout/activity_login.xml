@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="#ebf2f0"
+    tools:context=".RegisterActivity">
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/tvLogin"
+        style="@style/Widget.Neumorph.TextView"
+        android:layout_width="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login_account"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/_22sdp"
+        android:fontFamily="@font/roboto_bold"
+        />
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/layout_loginNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLogin"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:neomorph_background_color="@color/background"
+        app:neomorph_corner_radius="10dp"
+        app:neomorph_elevation="12dp"
+        app:neomorph_highlight_color="@color/highlight"
+        app:neomorph_shadow_color="@color/shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/shape_rectangle"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Phone Number"
+            android:inputType="text"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp" />
+
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/layout_Loginpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_loginNumber"
+        app:neomorph_background_color="@color/background"
+        app:neomorph_corner_radius="10dp"
+        app:neomorph_elevation="12dp"
+        app:neomorph_highlight_color="@color/highlight"
+        app:neomorph_shadow_color="@color/shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/shape_rectangle"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Enter Password"
+            android:inputType="number"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp" />
+
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+    <soup.neumorphism.NeumorphButton
+
+        style="@style/Widget.Neumorph.Button"
+        android:id="@+id/layout_btnLoginAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        app:neumorph_shadowElevation="@dimen/_5sdp"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/_15sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/login"
+        android:shadowRadius="@integer/button_pressed_animation_delay"
+        app:neumorph_shapeType="flat"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:outlineAmbientShadowColor="@color/background"
+        app:neumorph_inset="12dp"
+        app:neumorph_insetStart="12dp"
+        app:neumorph_insetEnd="12dp"
+        android:textColor="@color/dark"
+        android:layout_below="@id/layout_Loginpassword"
+        app:neumorph_insetTop="12dp"
+        app:neumorph_insetBottom="12dp"
+        android:scaleType="fitStart"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"/>
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/tvNewUser"
+        style="@style/Widget.Neumorph.TextView"
+        android:layout_width="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:layout_below="@+id/layout_btnLoginAccount"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/new_user"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:fontFamily="@font/roboto_light"
+        />
+</RelativeLayout>
