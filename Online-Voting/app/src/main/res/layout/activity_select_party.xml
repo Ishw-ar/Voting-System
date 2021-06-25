@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:clipChildren="false"
+    android:background="#ebf2f0"
+    tools:context=".RegisterActivity">
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/tvSelectUser"
+        style="@style/Widget.Neumorph.TextView"
+        android:layout_width="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/select_party"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/_22sdp"
+        android:fontFamily="@font/roboto_bold"
+        />
+
+
+    <soup.neumorphism.NeumorphFloatingActionButton
+        android:id="@+id/FirstParty"
+        style="@style/ShapeAppearance.Neumorph.FloatingActionButton"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@+id/tvSelectUser"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="96dp"
+
+        android:scaleType="center"
+        android:src="@drawable/google" />
+
+    <soup.neumorphism.NeumorphFloatingActionButton
+        android:id="@+id/SecondParty"
+        style="@style/ShapeAppearance.Neumorph.FloatingActionButton"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@+id/tvSelectUser"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_toEndOf="@+id/FirstParty"
+        android:scaleType="center"
+        android:src="@drawable/google" />
+
+    <soup.neumorphism.NeumorphFloatingActionButton
+        android:id="@+id/ThirdParty"
+        style="@style/ShapeAppearance.Neumorph.FloatingActionButton"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@+id/tvSelectUser"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="226dp"
+        android:scaleType="center"
+        android:src="@drawable/google" />
+
+    <soup.neumorphism.NeumorphFloatingActionButton
+        android:id="@+id/FourthParty"
+        style="@style/ShapeAppearance.Neumorph.FloatingActionButton"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@+id/tvSelectUser"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginTop="226dp"
+        android:layout_toEndOf="@+id/FirstParty"
+        android:scaleType="center"
+        android:src="@drawable/google" />
+</RelativeLayout>
+
+
+

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.masai.online_voting">
+
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +12,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineVoting">
-        <activity android:name=".LoginActivity"></activity>
+
+        <activity android:name=".AdharVerification"></activity>
+
+
+        <activity android:name=".SelectParty"></activity>
+
+        <activity
+            android:name=".FinalActivity"
+            android:theme="@style/ActionBar" />
+       
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".UserUpdatePassword" />
+        <activity android:name=".VerifyId" />
+
+
+        <activity android:name=".LoginActivity" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +37,13 @@
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".Welcome" />
-        <activity android:name=".MainActivity"></activity>
+
+
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/ActionBar" />
+
+
     </application>
 
 </manifest>
