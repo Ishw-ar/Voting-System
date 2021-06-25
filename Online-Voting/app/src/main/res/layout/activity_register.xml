@@ -33,11 +33,13 @@
     <!--        android:fontFamily="@font/roboto_bold"-->
 
     <!--        />-->
-    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+    <soup.neumorphism.NeumorphCardView
+
         android:id="@+id/layout_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvCreate"
+        app:neumorph_shapeType="pressed"
         android:layout_marginTop="@dimen/_40sdp"
         app:neomorph_background_color="@color/background"
         app:neomorph_corner_radius="10dp"
@@ -57,13 +59,14 @@
             android:paddingStart="@dimen/_10sdp"
             android:paddingEnd="@dimen/_10sdp" />
 
-    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+    </soup.neumorphism.NeumorphCardView>
 
-    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+    <soup.neumorphism.NeumorphCardView
         android:id="@+id/layout_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/layout_name"
+        app:neumorph_shapeType="pressed"
         app:neomorph_background_color="@color/background"
         app:neomorph_corner_radius="10dp"
         app:neomorph_elevation="12dp"
@@ -82,9 +85,9 @@
             android:paddingStart="@dimen/_10sdp"
             android:paddingEnd="@dimen/_10sdp" />
 
-    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+    </soup.neumorphism.NeumorphCardView>
 
-    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+    <soup.neumorphism.NeumorphCardView
         android:id="@+id/layout_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -92,6 +95,7 @@
         app:neomorph_background_color="@color/background"
         app:neomorph_corner_radius="10dp"
         app:neomorph_elevation="12dp"
+        app:neumorph_shapeType="pressed"
         app:neomorph_highlight_color="@color/highlight"
         app:neomorph_shadow_color="@color/shadow_color"
         app:neomorph_shadow_type="outer"
@@ -107,7 +111,7 @@
             android:paddingStart="@dimen/_10sdp"
             android:paddingEnd="@dimen/_10sdp" />
 
-    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+    </soup.neumorphism.NeumorphCardView>
 
 <!--    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout-->
 <!--        android:id="@+id/layout_btnCreateAccount"-->

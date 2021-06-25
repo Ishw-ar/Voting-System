@@ -42,5 +42,4 @@
         app:neumorph_insetBottom="12dp"
         android:scaleType="fitStart"
         app:neumorph_shapeAppearance="@style/CustomShapeAppearance"/>
-
 </LinearLayout>
