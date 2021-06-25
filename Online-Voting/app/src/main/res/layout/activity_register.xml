@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="@color/background"
+    tools:context=".RegisterActivity">
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/tvCreate"
+        style="@style/Widget.Neumorph.TextView"
+        android:layout_width="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:text="@string/create_your_account_here"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/_22sdp"
+        android:fontFamily="@font/roboto_bold"
+       />
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:id="@+id/tvCreate"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/create_your_account_here"-->
+    <!--        android:textColor="@color/dark"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="@dimen/_20sdp"-->
+    <!--        android:textSize="@dimen/_22sdp"-->
+    <!--        android:fontFamily="@font/roboto_bold"-->
+
+    <!--        />-->
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCreate"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:neomorph_background_color="@color/background"
+        app:neomorph_corner_radius="10dp"
+        app:neomorph_elevation="12dp"
+        app:neomorph_highlight_color="@color/highlight"
+        app:neomorph_shadow_color="@color/shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/shape_rectangle"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Name"
+            android:inputType="text"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp" />
+
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/layout_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_name"
+        app:neomorph_background_color="@color/background"
+        app:neomorph_corner_radius="10dp"
+        app:neomorph_elevation="12dp"
+        app:neomorph_highlight_color="@color/highlight"
+        app:neomorph_shadow_color="@color/shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/shape_rectangle"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp" />
+
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_phone"
+        app:neomorph_background_color="@color/background"
+        app:neomorph_corner_radius="10dp"
+        app:neomorph_elevation="12dp"
+        app:neomorph_highlight_color="@color/highlight"
+        app:neomorph_shadow_color="@color/shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/shape_rectangle"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp" />
+
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+<!--    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout-->
+<!--        android:id="@+id/layout_btnCreateAccount"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/layout_password"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        app:neomorph_background_color="@color/background"-->
+<!--        app:neomorph_corner_radius="10dp"-->
+<!--        app:neomorph_elevation="12dp"-->
+<!--        app:neomorph_highlight_color="@color/highlight"-->
+<!--        app:neomorph_shadow_color="@color/shadow_color"-->
+<!--        app:neomorph_shadow_type="outer"-->
+<!--        app:neomorph_view_type="rectangular">-->
+
+<!--        <Button-->
+<!--            android:layout_width="@dimen/_220sdp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@drawable/bg_button"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:textColor="@color/highlight"-->
+<!--            android:text="@string/create_account"-->
+<!--             />-->
+
+<!--    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>-->
+<!--    <club.cred.synth.views.SynthButton-->
+<!--        android:id="@+id/layout_btnCreateAccount"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_40sdp"-->
+<!--        android:layout_marginStart="@dimen/_40sdp"-->
+<!--        android:layout_marginEnd="@dimen/_40sdp"-->
+<!--        android:layout_marginBottom="@dimen/_25sdp"-->
+<!--        android:fontFamily="@font/roboto_bold"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="@string/create_account"-->
+<!--        android:textColor="@color/highlight"-->
+<!--        android:textSize="@dimen/_17sdp"-->
+<!--        android:layout_below="@id/layout_password"-->
+<!--        app:neuButtonType="elevated_soft"-->
+<!--        />-->
+    <soup.neumorphism.NeumorphButton
+        style="@style/Widget.Neumorph.Button"
+        android:id="@+id/layout_btnCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        app:neumorph_shadowElevation="@dimen/_5sdp"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/_15sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/create_account"
+        android:shadowRadius="@integer/button_pressed_animation_delay"
+        app:neumorph_shapeType="flat"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:outlineAmbientShadowColor="@color/background"
+        app:neumorph_inset="12dp"
+        app:neumorph_insetStart="12dp"
+        app:neumorph_insetEnd="12dp"
+        android:textColor="@color/dark"
+        android:layout_below="@id/layout_password"
+        app:neumorph_insetTop="12dp"
+        app:neumorph_insetBottom="12dp"
+        android:scaleType="fitStart"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_btnCreateAccount"
+        android:gravity="center">
+
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:neomorph_background_color="@color/background"
+            app:neomorph_corner_radius="10dp"
+            app:neomorph_elevation="8dp"
+            app:neomorph_highlight_color="@color/highlight"
+            app:neomorph_shadow_color="@color/shadow_color"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_view_type="rectangular">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/google" />
+
+
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:neomorph_background_color="@color/background"
+            app:neomorph_corner_radius="10dp"
+            app:neomorph_elevation="8dp"
+            app:neomorph_highlight_color="@color/highlight"
+            app:neomorph_shadow_color="@color/shadow_color"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_view_type="rectangular">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/facebook" />
+
+
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:text="Already have an account?"
+            android:textColor="@color/dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Login"
+            android:textColor="@color/dark"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

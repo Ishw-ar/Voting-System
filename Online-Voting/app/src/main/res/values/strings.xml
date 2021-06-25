@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Online-Voting</string>
+    <string name="create_your_account_here">Create Your Account Here</string>
+    <string name="create_account">Create Account</string>
 </resources>
