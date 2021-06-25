@@ -10,17 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineVoting">
 
+        <activity android:name=".SplashScreen"/>
+
+
         <activity android:name=".RegisterActivity"></activity>
 
         <activity android:name=".Welcome"></activity>
 
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
