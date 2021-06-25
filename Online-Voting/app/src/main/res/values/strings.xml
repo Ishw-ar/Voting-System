@@ -6,4 +6,9 @@
     <string name="login">Login</string>
 
     <string name="new_user">New User?Create Your Account</string>
+    <string name="click_here_to_vote_now">Click here to vote now</string>
+    <string name="detect_face">Detect Face</string>
+    <string name="vote_now">Vote Now</string>
+    <string name="thank_you_for_your_voting">Thank You for your voting</string>
+    <string name="you">You</string>
 </resources>

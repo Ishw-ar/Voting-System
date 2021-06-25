@@ -1,18 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#ebf2f0"
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <TextView
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/votenowtv"
+        style="@style/Widget.Neumorph.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:elevation="@dimen/_10sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/click_here_to_vote_now"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/_22sdp"
+        android:visibility="invisible" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/edittext_card_home"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/votenowtv"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:visibility="invisible"
+        app:neumorph_shadowElevation="@dimen/_1sdp">
+
+        <ImageView
+            android:id="@+id/authenticate"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_190sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:src="@drawable/onlinevoting" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/voted_card_home"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext_card_home"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:visibility="invisible"
+        app:neumorph_shadowElevation="@dimen/_1sdp">
+
+        <ImageView
+            android:id="@+id/votedicon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_below="@+id/votenowtv"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/voted" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/votedtv"
+        style="@style/Widget.Neumorph.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/voted_card_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:elevation="@dimen/_10sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Thanks for voting!"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/_22sdp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

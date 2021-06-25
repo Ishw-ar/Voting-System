@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <style name="CustomShapeAppearance">
         <item name="neumorph_cornerFamily">rounded</item>
         <item name="neumorph_cornerSize">25dp</item>
@@ -10,5 +10,9 @@
         <item name="neumorph_cornerSizeTopRight">10dp</item>
         <item name="neumorph_cornerSizeBottomLeft">10dp</item>
         <item name="neumorph_cornerSizeBottomRight">10dp</item>
+    </style>
+    <style name="ActionBar" parent="Theme.AppCompat.DayNight.DarkActionBar">
+          <item name="colorPrimary"> @color/dark</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/dark</item>
     </style>
 </resources>
