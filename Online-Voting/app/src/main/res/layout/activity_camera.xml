@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ebf2f0"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity">
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="10dp"
+        android:text="Place your face in middle of screen then click on button and hold for a second" />
+
+    <com.wonderkiln.camerakit.CameraView
+        android:layout_below="@+id/intro"
+        android:id="@+id/camera_view"
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="400dp"
+        app:ckFacing="front">
+
+    </com.wonderkiln.camerakit.CameraView>
+    
+
+    <com.masai.online_voting.Helper.GraphicOverlay
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/graphic_overlay"
+        android:layout_height="400dp"
+        android:layout_below="@+id/intro">
+
+    </com.masai.online_voting.Helper.GraphicOverlay>
+
+    <soup.neumorphism.NeumorphButton
+        style="@style/Widget.Neumorph.Button"
+        android:id="@+id/detect_face_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        app:neumorph_shadowElevation="@dimen/_5sdp"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/_15sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/detect_face"
+        android:shadowRadius="@integer/button_pressed_animation_delay"
+        app:neumorph_shapeType="flat"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:outlineAmbientShadowColor="@color/background"
+        app:neumorph_inset="12dp"
+        app:neumorph_insetStart="12dp"
+        app:neumorph_insetEnd="12dp"
+        android:textColor="@color/dark"
+        android:layout_below="@id/graphic_overlay"
+        app:neumorph_insetTop="12dp"
+        app:neumorph_insetBottom="12dp"
+        android:scaleType="fitStart"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"/>
+
+    <soup.neumorphism.NeumorphButton
+        style="@style/Widget.Neumorph.Button"
+        android:id="@+id/instantvote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        app:neumorph_shadowElevation="@dimen/_5sdp"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/_15sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/vote_now"
+        android:shadowRadius="@integer/button_pressed_animation_delay"
+        app:neumorph_shapeType="flat"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:outlineAmbientShadowColor="@color/background"
+        app:neumorph_inset="12dp"
+        app:neumorph_insetStart="12dp"
+        app:neumorph_insetEnd="12dp"
+        android:textColor="@color/dark"
+        android:layout_below="@id/detect_face_btn"
+        app:neumorph_insetTop="12dp"
+        android:visibility="invisible"
+        app:neumorph_insetBottom="12dp"
+        android:scaleType="fitStart"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"/>
+</RelativeLayout>
