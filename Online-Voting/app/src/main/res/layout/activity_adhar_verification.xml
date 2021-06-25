@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdharVerification">
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        app:neumorph_shadowElevation="@dimen/_1sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="48dp"
+        >
+        <ImageView
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_190sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/adharimage"
+            android:layout_margin="@dimen/_20sdp"
+            />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_marginTop="40dp"
+        android:id="@+id/layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_phone"
+        app:neomorph_background_color="@color/background"
+        app:neomorph_corner_radius="10dp"
+        app:neomorph_elevation="12dp"
+        app:neumorph_shapeType="pressed"
+        app:neomorph_highlight_color="@color/highlight"
+        app:neomorph_shadow_color="@color/shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
+        <EditText
+            android:id="@+id/etAdharNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+
+            android:background="@drawable/shape_rectangle"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Enter Adhar Number"
+            android:inputType="number"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp" />
+    </soup.neumorphism.NeumorphCardView>
+
+<!--    <soup.neumorphism.NeumorphButton-->
+<!--        android:layout_marginTop="@dimen/_40sdp"-->
+<!--        style="@style/Widget.Neumorph.Button"-->
+<!--        android:id="@+id/btnVerifyAdhar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:fontFamily="@font/roboto_bold"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="@dimen/_30sdp"-->
+<!--        android:layout_marginEnd="@dimen/_30sdp"-->
+<!--        app:neumorph_shadowElevation="@dimen/_5sdp"-->
+<!--        android:background="@color/white"-->
+<!--        android:padding="@dimen/_15sdp"-->
+<!--        android:text="Verify your number "-->
+<!--        android:shadowRadius="@integer/button_pressed_animation_delay"-->
+<!--        app:neumorph_shapeType="flat"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="20sp"-->
+<!--        android:outlineAmbientShadowColor="#000000"-->
+<!--        app:neumorph_inset="12dp"-->
+<!--        app:neumorph_insetStart="12dp"-->
+<!--        app:neumorph_insetEnd="12dp"-->
+<!--        app:neumorph_insetTop="12dp"-->
+<!--        app:neumorph_insetBottom="12dp"-->
+<!--        android:scaleType="fitStart"-->
+<!--        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"/>-->
+
+    <include
+        android:id="@+id/progressButtonAdhar"
+        android:layout_marginTop="20dp"
+        layout="@layout/progress_button_lauout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineVoting">
 
+        <activity android:name=".AdharVerification"></activity>
+
+
         <activity android:name=".SelectParty"></activity>
 
         <activity
@@ -22,6 +25,7 @@
         <activity android:name=".CameraActivity" />
         <activity android:name=".UserUpdatePassword" />
         <activity android:name=".VerifyId" />
+
 
         <activity android:name=".LoginActivity" />
         <activity android:name=".SplashScreen">
@@ -34,9 +38,11 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".Welcome" />
 
+
         <activity
             android:name=".HomeActivity"
             android:theme="@style/ActionBar" />
+
 
     </application>
 
