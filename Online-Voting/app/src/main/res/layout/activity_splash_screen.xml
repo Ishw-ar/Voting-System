@@ -5,33 +5,42 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="#ebf2f0"
     android:layout_height="match_parent"
     tools:context=".SplashScreen">
 
     <ImageView
         android:id="@+id/voteimage"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_200sdp"
+        android:scaleType="fitXY"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/onlinevoting" />
+
+    <soup.neumorphism.NeumorphButton
+        android:layout_marginTop="@dimen/_120sdp"
+        style="@style/Widget.Neumorph.Button"
+        android:id="@+id/btnStarted"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/vote" />
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        app:neumorph_shadowElevation="@dimen/_5sdp"
+        android:background="@color/white"
+        android:padding="@dimen/_15sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Get's Started"
+        android:shadowRadius="@integer/button_pressed_animation_delay"
+        app:neumorph_shapeType="flat"
 
-<soup.neumorphism.NeumorphCardView
-    android:id="@+id/btnStarted"
-    android:layout_marginTop="@dimen/_120sdp"
-    android:layout_width="match_parent"
-    android:padding="@dimen/_20sdp"
-
-    android:layout_marginStart="@dimen/_50sdp"
-    android:layout_marginEnd="@dimen/_50sdp"
-    style="@style/Widget.Neumorph.CardView"
-    android:layout_height="@dimen/_60sdp">
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:text="Get's Strated"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:layout_height="@dimen/_15sdp"/>
-</soup.neumorphism.NeumorphCardView>
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:outlineAmbientShadowColor="#000000"
+        app:neumorph_inset="12dp"
+        app:neumorph_insetStart="12dp"
+        app:neumorph_insetEnd="12dp"
+        app:neumorph_insetTop="12dp"
+        app:neumorph_insetBottom="12dp"
+        android:scaleType="fitStart"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"/>
 
 </LinearLayout>
