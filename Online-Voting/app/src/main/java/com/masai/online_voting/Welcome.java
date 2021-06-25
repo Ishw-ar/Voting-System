@@ -14,10 +14,17 @@ public class Welcome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
         Register=(Button)findViewById(R.id.btnCreateAccountWelcome);
+        Login=(Button)findViewById(R.id.AccountLogin);
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Welcome.this,RegisterActivity.class));
+            }
+        });
+        Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Welcome.this,LoginActivity.class));
             }
         });
     }

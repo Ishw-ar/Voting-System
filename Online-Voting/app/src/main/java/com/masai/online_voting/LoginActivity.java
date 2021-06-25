@@ -5,23 +5,24 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-public class RegisterActivity extends AppCompatActivity {
-    private TextView LoginToRegister;
+public class LoginActivity extends AppCompatActivity {
+    public TextView CreateAccount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_login);
+        CreateAccount=(TextView) findViewById(R.id.tvNewUser);
 
-        LoginToRegister=(TextView) findViewById(R.id.tvlogintoregister);
-
-        LoginToRegister.setOnClickListener(new View.OnClickListener() {
+        CreateAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
+                startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
             }
         });
+
     }
 }

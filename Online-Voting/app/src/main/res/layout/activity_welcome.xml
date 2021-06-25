@@ -53,6 +53,7 @@
         android:scaleType="fitStart"
         app:neumorph_shapeAppearance="@style/CustomShapeAppearance"/>
     <soup.neumorphism.NeumorphButton
+        android:id="@+id/AccountLogin"
         android:layout_marginTop="@dimen/_25sdp"
         style="@style/Widget.Neumorph.Button"
         android:layout_width="match_parent"
