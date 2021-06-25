@@ -20,7 +20,7 @@
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".Welcome" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".HomeActivity"></activity>
     </application>
 
 </manifest>
