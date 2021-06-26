@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,6 +16,10 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.thecode.aestheticdialogs.AestheticDialog;
+import com.thecode.aestheticdialogs.DialogAnimation;
+import com.thecode.aestheticdialogs.DialogStyle;
+import com.thecode.aestheticdialogs.DialogType;
 
 import soup.neumorphism.NeumorphButton;
 
@@ -40,7 +45,13 @@ public class VerifyId extends AppCompatActivity {
             public void onClick(View view) {
                 if(TextUtils.isEmpty(Id.getText().toString()))
                 {
-                    Toast.makeText(VerifyId.this, "Please Enter you id..", Toast.LENGTH_LONG).show();
+                    new AestheticDialog.Builder(VerifyId.this, DialogStyle.TOASTER, DialogType.ERROR)
+                            .setTitle("Error")
+                            .setMessage("Please enter your id")
+                            .setDarkMode(false)
+                            .setAnimation(DialogAnimation.DIAGONAL)
+                            .setGravity(Gravity.TOP)
+                            .show();
                 }
                 else
                 {

@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,6 +21,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.masai.online_voting.Model.Users;
 import com.masai.online_voting.Prevalent.Prevalent;
+import com.thecode.aestheticdialogs.AestheticDialog;
+import com.thecode.aestheticdialogs.DialogAnimation;
+import com.thecode.aestheticdialogs.DialogStyle;
+import com.thecode.aestheticdialogs.DialogType;
 
 import soup.neumorphism.NeumorphButton;
 
@@ -58,15 +63,33 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(TextUtils.isEmpty(Phone.getText().toString()))
                 {
-                    Toast.makeText(LoginActivity.this, "Please enter your phone number..", Toast.LENGTH_SHORT).show();
+                    new AestheticDialog.Builder(LoginActivity.this, DialogStyle.TOASTER, DialogType.ERROR)
+                            .setMessage("Please Enter your phone number first")
+                            .setDarkMode(false)
+                            .setTitle("Error!")
+                            .setAnimation(DialogAnimation.SLIDE_DOWN)
+                            .setGravity(Gravity.TOP)
+                            .show();
                 }
                 else if(TextUtils.isEmpty(Password.getText().toString()))
                 {
-                    Toast.makeText(LoginActivity.this, "Please enter your password...", Toast.LENGTH_SHORT).show();
+                    new AestheticDialog.Builder(LoginActivity.this, DialogStyle.TOASTER, DialogType.ERROR)
+                            .setMessage("Please Enter your password")
+                            .setDarkMode(false)
+                            .setTitle("Error!")
+                            .setAnimation(DialogAnimation.DIAGONAL)
+                            .setGravity(Gravity.TOP)
+                            .show();
                 }
                 else if(Phone.getText().toString().length() <10)
                 {
-                    Toast.makeText(LoginActivity.this, "Please enter correct phone number..", Toast.LENGTH_SHORT).show();
+                    new AestheticDialog.Builder(LoginActivity.this, DialogStyle.TOASTER, DialogType.ERROR)
+                            .setMessage("Please Enter correct phone number")
+                            .setDarkMode(false)
+                            .setTitle("Error!")
+                            .setAnimation(DialogAnimation.SLIDE_RIGHT)
+                            .setGravity(Gravity.TOP)
+                            .show();
                 }
                 else
                 {

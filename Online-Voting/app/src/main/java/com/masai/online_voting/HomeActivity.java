@@ -11,6 +11,7 @@ import android.hardware.biometrics.BiometricPrompt;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.CancellationSignal;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -23,6 +24,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.thecode.aestheticdialogs.AestheticDialog;
+import com.thecode.aestheticdialogs.DialogAnimation;
+import com.thecode.aestheticdialogs.DialogStyle;
+import com.thecode.aestheticdialogs.DialogType;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
@@ -66,7 +71,13 @@ public class HomeActivity extends AppCompatActivity {
                     Auth.setVisibility(View.INVISIBLE);
                     cardView1.setVisibility(View.INVISIBLE);
                     cardView2.setVisibility(View.VISIBLE);
-
+                    new AestheticDialog.Builder(HomeActivity.this, DialogStyle.FLAT, DialogType.ERROR)
+                            .setTitle("Please try in next election")
+                            .setMessage("Sorry you have already used your vote!!")
+                            .setDarkMode(false)
+                            .setAnimation(DialogAnimation.SHRINK)
+                            .setGravity(Gravity.TOP)
+                            .show();
                 }
                 else
                 {
@@ -76,6 +87,13 @@ public class HomeActivity extends AppCompatActivity {
                     Auth.setVisibility(View.VISIBLE);
                     cardView1.setVisibility(View.VISIBLE);
                     cardView2.setVisibility(View.INVISIBLE);
+                    new AestheticDialog.Builder(HomeActivity.this, DialogStyle.FLAT, DialogType.INFO)
+                            .setTitle("One vote can make change")
+                            .setMessage("Your vote is precious, use carefully!!")
+                            .setDarkMode(false)
+                            .setAnimation(DialogAnimation.SHRINK)
+                            .setGravity(Gravity.BOTTOM)
+                            .show();
 
                 }
 

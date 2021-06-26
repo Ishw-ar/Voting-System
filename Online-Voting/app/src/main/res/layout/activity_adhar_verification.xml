@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#ebf2f0"
     tools:context=".AdharVerification">
     <soup.neumorphism.NeumorphCardView
         style="@style/Widget.Neumorph.CardView"
@@ -19,7 +20,7 @@
             android:layout_width="@dimen/_190sdp"
             android:layout_height="@dimen/_190sdp"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/adharimage"
+            android:src="@drawable/ic_aadhar_black"
             android:layout_margin="@dimen/_20sdp"
             />
     </soup.neumorphism.NeumorphCardView>

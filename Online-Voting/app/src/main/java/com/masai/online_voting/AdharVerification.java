@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Gravity;
 import android.view.View;
 import android.view.animation.Animation;
 import android.widget.Button;
@@ -16,6 +17,11 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.thecode.aestheticdialogs.AestheticDialog;
+import com.thecode.aestheticdialogs.DialogAnimation;
+import com.thecode.aestheticdialogs.DialogStyle;
+import com.thecode.aestheticdialogs.DialogType;
 
 import java.util.regex.Pattern;
 
@@ -53,16 +59,20 @@ public class AdharVerification extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     Intent i=new Intent(AdharVerification.this,Welcome.class);
-
                                     startActivity(i);
                                 }
                             },2000);
                         }
                     },3000);
                 }else{
-                    Toast.makeText(AdharVerification.this, "Please enter a valid adhar number", Toast.LENGTH_SHORT).show();
+                    new AestheticDialog.Builder(AdharVerification.this, DialogStyle.FLAT, DialogType.WARNING)
+                            .setTitle("Please try again")
+                            .setMessage("Enter Correct Aadhaar number")
+                            .setDarkMode(false)
+                            .setAnimation(DialogAnimation.SPIN)
+                            .setGravity(Gravity.TOP)
+                            .show();
                 }
-
             }
         });
     }
@@ -147,8 +157,8 @@ textView=view.findViewById(R.id.tvAdhar);
     }
     @SuppressLint("ResourceAsColor")
     void buttonFinished(){
-        layout.setBackgroundColor(R.color.purple_200);
+        layout.setBackgroundColor(R.color.light_white);
         progressBar.setVisibility(View.GONE);
-        textView.setText("Done");
+        textView.setText("Verified");
     }
 }
