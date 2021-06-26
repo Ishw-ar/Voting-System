@@ -14,10 +14,11 @@
         android:layout_marginRight="20dp"
         android:padding="20dp"
         android:textSize="20sp"
+        android:fontFamily="@font/roboto_medium"
         android:textAlignment="center"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@color/dark"
         android:layout_marginTop="10dp"
         android:text="Place your face in middle of screen then click on button and hold for a second" />
 

@@ -3,20 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:clipChildren="false"
     android:background="#ebf2f0"
-    tools:context=".RegisterActivity">
-
+    android:layout_height="match_parent"
+    tools:context=".AdminLogin">
     <soup.neumorphism.NeumorphTextView
-        android:id="@+id/tvLogin"
+        android:id="@+id/tvLogin_admin"
         style="@style/Widget.Neumorph.TextView"
         android:layout_width="wrap_content"
         android:elevation="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="@string/login_account"
+        android:text="Login As Admin"
         android:textColor="@color/dark"
         android:textSize="@dimen/_22sdp"
         android:fontFamily="@font/roboto_bold"
@@ -25,7 +24,7 @@
         android:id="@+id/layout_loginNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvLogin"
+        android:layout_below="@+id/tvLogin_admin"
         android:layout_marginTop="@dimen/_40sdp"
         app:neomorph_background_color="@color/background"
         app:neomorph_corner_radius="10dp"
@@ -38,11 +37,11 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:id="@+id/loginphone"
+            android:id="@+id/loginEmail_admin"
             android:layout_height="@dimen/_50sdp"
             android:background="@drawable/shape_rectangle"
             android:fontFamily="@font/roboto_light"
-            android:hint="Phone Number"
+            android:hint="Enter Email"
             android:inputType="text"
             android:paddingStart="@dimen/_10sdp"
             android:paddingEnd="@dimen/_10sdp" />
@@ -65,7 +64,7 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:id="@+id/loginpassword"
+            android:id="@+id/loginpassword_admin"
             android:layout_height="@dimen/_50sdp"
             android:background="@drawable/shape_rectangle"
             android:fontFamily="@font/roboto_light"
@@ -78,7 +77,7 @@
     <soup.neumorphism.NeumorphButton
 
         style="@style/Widget.Neumorph.Button"
-        android:id="@+id/layout_btnLoginAccount"
+        android:id="@+id/layout_btnLoginAccount_admin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_30sdp"
@@ -103,18 +102,5 @@
         app:neumorph_insetBottom="12dp"
         android:scaleType="fitStart"
         app:neumorph_shapeAppearance="@style/CustomShapeAppearance"/>
-    <soup.neumorphism.NeumorphTextView
-        android:id="@+id/tvNewUser"
-        style="@style/Widget.Neumorph.TextView"
-        android:layout_width="wrap_content"
-        android:elevation="@dimen/_10sdp"
-        android:layout_below="@+id/layout_btnLoginAccount"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="@string/new_user"
-        android:textColor="@color/dark"
-        android:textSize="@dimen/_15sdp"
-        android:layout_marginTop="@dimen/_40sdp"
-        android:fontFamily="@font/roboto_medium"
-        />
+
 </RelativeLayout>

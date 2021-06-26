@@ -12,21 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineVoting">
-
-        <activity android:name=".AdharVerification"></activity>
-
-
-        <activity android:name=".SelectParty"></activity>
-
+        <activity android:name=".AdminDashboard"></activity>
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".AdharVerification" />
+        <activity android:name=".SelectParty" />
         <activity
             android:name=".FinalActivity"
             android:theme="@style/ActionBar" />
-       
         <activity android:name=".CameraActivity" />
         <activity android:name=".UserUpdatePassword" />
         <activity android:name=".VerifyId" />
-
-
         <activity android:name=".LoginActivity" />
         <activity android:name=".SplashScreen">
             <intent-filter>
@@ -37,13 +32,9 @@
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".Welcome" />
-
-
         <activity
             android:name=".HomeActivity"
             android:theme="@style/ActionBar" />
-
-
     </application>
 
 </manifest>
