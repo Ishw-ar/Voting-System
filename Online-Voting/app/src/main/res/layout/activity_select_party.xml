@@ -29,11 +29,33 @@
         android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_100sdp"
         android:layout_below="@+id/tvSelectUser"
+        app:neumorph_backgroundColor="@color/white"
         android:layout_marginStart="@dimen/_40sdp"
         android:layout_marginTop="96dp"
+        android:scaleType="center" />
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_65sdp"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:src="@drawable/lamps"
+        />
 
-        android:scaleType="center"
-        android:src="@drawable/google" />
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/lamp"
+        style="@style/Widget.Neumorph.TextView"
+        android:layout_width="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:layout_below="@+id/FirstParty"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_45sdp"
+        android:text="@string/jdu"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/roboto_medium"
+        />
+
+
 
     <soup.neumorphism.NeumorphFloatingActionButton
         android:id="@+id/SecondParty"
@@ -43,10 +65,34 @@
         android:layout_below="@+id/tvSelectUser"
         android:layout_marginStart="30dp"
         android:layout_marginTop="96dp"
+        app:neumorph_backgroundColor="@color/white"
         android:layout_marginEnd="@dimen/_40sdp"
         android:layout_toEndOf="@+id/FirstParty"
-        android:scaleType="center"
-        android:src="@drawable/google" />
+        android:scaleType="center" />
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_toEndOf="@+id/ThirdParty"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_160sdp"
+        android:src="@drawable/nitish"
+        />
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/nitish"
+        style="@style/Widget.Neumorph.TextView"
+        android:layout_width="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:layout_below="@+id/FirstParty"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_toEndOf="@+id/lamp"
+        android:text="@string/nitish"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/roboto_medium"
+        />
+
+
 
     <soup.neumorphism.NeumorphFloatingActionButton
         android:id="@+id/ThirdParty"
@@ -54,10 +100,31 @@
         android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_100sdp"
         android:layout_below="@+id/tvSelectUser"
+        app:neumorph_backgroundColor="@color/white"
         android:layout_marginStart="@dimen/_40sdp"
-        android:layout_marginTop="226dp"
-        android:scaleType="center"
-        android:src="@drawable/google" />
+        android:layout_marginTop="256dp"
+        android:scaleType="center" />
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_290sdp"
+        android:src="@drawable/downloads"/>
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/lotus"
+        style="@style/Widget.Neumorph.TextView"
+        android:layout_width="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:layout_below="@+id/ThirdParty"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_45sdp"
+        android:text="@string/giriraj"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/roboto_medium"
+        />
+
 
     <soup.neumorphism.NeumorphFloatingActionButton
         android:id="@+id/FourthParty"
@@ -67,8 +134,32 @@
         android:layout_below="@+id/tvSelectUser"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="@dimen/_40sdp"
-        android:layout_marginTop="226dp"
+        android:layout_marginTop="256dp"
+        app:neumorph_backgroundColor="@color/white"
         android:layout_toEndOf="@+id/FirstParty"
-        android:scaleType="center"
-        android:src="@drawable/google" />
+        android:scaleType="center"/>
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_toEndOf="@+id/ThirdParty"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_280sdp"
+        android:src="@drawable/handscong"/>
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/congress"
+        style="@style/Widget.Neumorph.TextView"
+        android:layout_width="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:layout_below="@+id/FourthParty"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_toEndOf="@+id/lamp"
+        android:text="@string/congress"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/roboto_medium"
+        />
+
+
+
 </RelativeLayout>
