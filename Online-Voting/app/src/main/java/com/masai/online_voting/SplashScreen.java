@@ -33,7 +33,7 @@ public class SplashScreen extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(SplashScreen.this,Welcome.class);
+                Intent intent=new Intent(SplashScreen.this,AdharVerification.class);
                 startActivity(intent);
             }
         });

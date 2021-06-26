@@ -24,7 +24,7 @@ public class Welcome extends AppCompatActivity {
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Welcome.this,AdharVerification.class));
+                startActivity(new Intent(Welcome.this,LoginActivity.class));
             }
         });
     }
