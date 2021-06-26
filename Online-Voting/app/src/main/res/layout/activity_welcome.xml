@@ -42,6 +42,7 @@
         android:text="CREATE ACCOUNT"
         android:shadowRadius="@integer/button_pressed_animation_delay"
         app:neumorph_shapeType="flat"
+        android:textColor="@color/dark"
         android:textAlignment="center"
         android:textSize="20sp"
         android:outlineAmbientShadowColor="#000000"
@@ -62,6 +63,7 @@
         android:layout_marginEnd="@dimen/_30sdp"
         app:neumorph_shadowElevation="@dimen/_5sdp"
         android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/dark"
         android:background="#ebf2f0"
         android:padding="@dimen/_15sdp"
         android:text="AlREADY HAVE AN ACCOUNT? LOGIN"
@@ -103,5 +105,31 @@
 <!--        android:textSize="40sp"-->
 <!--        android:textStyle="bold"-->
 <!--         />-->
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/Admin_login"
+        android:layout_marginTop="@dimen/_25sdp"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        app:neumorph_shadowElevation="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:background="#ebf2f0"
+        android:padding="@dimen/_15sdp"
+        android:text="Login as Admin"
+        android:shadowRadius="@integer/button_pressed_animation_delay"
+        app:neumorph_shapeType="flat"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:outlineAmbientShadowColor="#000000"
+        app:neumorph_inset="12dp"
+        app:neumorph_insetStart="12dp"
+        app:neumorph_insetEnd="12dp"
+        app:neumorph_insetTop="12dp"
+        app:neumorph_insetBottom="12dp"
+        android:scaleType="fitStart"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"/>
 
 </LinearLayout>
