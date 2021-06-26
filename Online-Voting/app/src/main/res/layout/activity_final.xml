@@ -7,14 +7,14 @@
     android:background="#ebf2f0"
     tools:context=".FinalActivity">
 
-    <soup.neumorphism.NeumorphTextView
+    <TextView
         android:id="@+id/v1"
-        style="@style/Widget.Neumorph.TextView"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/_20sdp"
-        android:elevation="@dimen/_10sdp"
+
         android:fontFamily="@font/roboto_bold"
         android:text="@string/thank_you_for_your_voting"
         android:textAlignment="center"

@@ -10,6 +10,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 
@@ -41,6 +42,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.thecode.aestheticdialogs.AestheticDialog;
+import com.thecode.aestheticdialogs.DialogAnimation;
+import com.thecode.aestheticdialogs.DialogStyle;
+import com.thecode.aestheticdialogs.DialogType;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -161,19 +166,43 @@ public class RegisterActivity extends AppCompatActivity {
 
                 if(TextUtils.isEmpty(Name.getText().toString()))
                 {
-                    Toast.makeText(RegisterActivity.this, "Please enter your name first..", Toast.LENGTH_SHORT).show();
+                    new AestheticDialog.Builder(RegisterActivity.this, DialogStyle.RAINBOW, DialogType.ERROR)
+                            .setMessage("Please Enter your name first")
+                            .setDarkMode(true)
+                            .setTitle("Error!")
+                            .setAnimation(DialogAnimation.WINDMILL)
+                            .setGravity(Gravity.TOP)
+                            .show();
                 }
                 else if(TextUtils.isEmpty(Phone.getText().toString()))
                 {
-                    Toast.makeText(RegisterActivity.this, "Please enter your Phone Number first..", Toast.LENGTH_SHORT).show();
+                    new AestheticDialog.Builder(RegisterActivity.this, DialogStyle.RAINBOW, DialogType.ERROR)
+                            .setMessage("Please Enter your phone number first")
+                            .setDarkMode(true)
+                            .setTitle("Error!")
+                            .setAnimation(DialogAnimation.SLIDE_LEFT)
+                            .setGravity(Gravity.TOP)
+                            .show();
                 }
                 else if(TextUtils.isEmpty(Password.getText().toString()))
                 {
-                    Toast.makeText(RegisterActivity.this, "Please enter your password first..", Toast.LENGTH_SHORT).show();
+                    new AestheticDialog.Builder(RegisterActivity.this, DialogStyle.RAINBOW, DialogType.ERROR)
+                            .setMessage("Please Enter your password first")
+                            .setDarkMode(true)
+                            .setTitle("Error!")
+                            .setAnimation(DialogAnimation.SLIDE_LEFT)
+                            .setGravity(Gravity.TOP)
+                            .show();
                 }
                 else if(Phone.getText().toString().length()<10)
                 {
-                    Toast.makeText(RegisterActivity.this, "Please enter correct Phone Number..", Toast.LENGTH_SHORT).show();
+                    new AestheticDialog.Builder(RegisterActivity.this, DialogStyle.RAINBOW, DialogType.ERROR)
+                            .setMessage("Please Enter correct phone number first")
+                            .setDarkMode(true)
+                            .setTitle("Error!")
+                            .setAnimation(DialogAnimation.DIAGONAL)
+                            .setGravity(Gravity.TOP)
+                            .show();
                 }
 
                 else
@@ -188,7 +217,13 @@ public class RegisterActivity extends AppCompatActivity {
                             }
                             else
                             {
-                                Toast.makeText(RegisterActivity.this, "Account with this number already exist..", Toast.LENGTH_SHORT).show();
+                                new AestheticDialog.Builder(RegisterActivity.this, DialogStyle.RAINBOW, DialogType.ERROR)
+                                        .setMessage("Account  with this number already exists....")
+                                        .setDarkMode(true)
+                                        .setTitle("Error!")
+                                        .setAnimation(DialogAnimation.SLIDE_LEFT)
+                                        .setGravity(Gravity.TOP)
+                                        .show();
                             }
                         }
 
@@ -219,7 +254,13 @@ public class RegisterActivity extends AppCompatActivity {
                         if(task.isSuccessful())
                         {
                             LoadingBar.dismiss();
-                            Toast.makeText(RegisterActivity.this, "Account created successfully..", Toast.LENGTH_SHORT).show();
+                            new AestheticDialog.Builder(RegisterActivity.this, DialogStyle.FLASH, DialogType.ERROR)
+                                    .setMessage("Account created SucessFully... ")
+                                    .setDarkMode(true)
+                                    .setTitle("Welcome")
+                                    .setAnimation(DialogAnimation.SPIN)
+                                    .setGravity(Gravity.TOP)
+                                    .show();
                             Intent i=new Intent(RegisterActivity.this,LoginActivity.class);
                             i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(i);
