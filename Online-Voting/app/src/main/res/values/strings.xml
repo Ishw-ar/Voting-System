@@ -5,9 +5,10 @@
     <string name="login_account">Login To Your Account</string>
     <string name="login">Login</string>
     <string name="select_party">Select Your Party</string>
-    <string name="congress"> Rahul Gandhi</string>
-    <string name="jdu">Tejashwi Yadav</string>
-    <string name="nitish">Nitish Kumar</string>
     <string name="new_user">New User?Create Your Account</string>
-    <string name="giriraj">Giriraj Singh</string>
+    <string name="click_here_to_vote_now">Click here to vote now</string>
+    <string name="detect_face">Detect Face</string>
+    <string name="vote_now">Vote Now</string>
+    <string name="thank_you_for_your_voting">Thank You for your voting</string>
+    <string name="you">You</string>
 </resources>

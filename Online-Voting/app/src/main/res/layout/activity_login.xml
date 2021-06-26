@@ -38,6 +38,7 @@
 
         <EditText
             android:layout_width="match_parent"
+            android:id="@+id/loginphone"
             android:layout_height="@dimen/_50sdp"
             android:background="@drawable/shape_rectangle"
             android:fontFamily="@font/roboto_light"
@@ -64,11 +65,12 @@
 
         <EditText
             android:layout_width="match_parent"
+            android:id="@+id/loginpassword"
             android:layout_height="@dimen/_50sdp"
             android:background="@drawable/shape_rectangle"
             android:fontFamily="@font/roboto_light"
             android:hint="Enter Password"
-            android:inputType="number"
+            android:inputType="textPassword"
             android:paddingStart="@dimen/_10sdp"
             android:paddingEnd="@dimen/_10sdp" />
 
