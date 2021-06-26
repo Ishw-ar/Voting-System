@@ -52,6 +52,7 @@ public class SelectParty extends AppCompatActivity {
                         LoadingBar.setMessage("Please wait..");
                         LoadingBar.setCanceledOnTouchOutside(false);
                         LoadingBar.show();
+                        mref.child("Users").child(Phone).child("Vote").setValue("1");
 
                         mref.child("Users").child(Phone).child("Party").setValue("Party1").addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
@@ -97,6 +98,7 @@ public class SelectParty extends AppCompatActivity {
                         LoadingBar.setMessage("Please wait..");
                         LoadingBar.setCanceledOnTouchOutside(false);
                         LoadingBar.show();
+                        mref.child("Users").child(Phone).child("Vote").setValue("1");
 
                         mref.child("Users").child(Phone).child("Party").setValue("Party2").addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
@@ -138,6 +140,7 @@ public class SelectParty extends AppCompatActivity {
                         LoadingBar.setMessage("Please wait..");
                         LoadingBar.setCanceledOnTouchOutside(false);
                         LoadingBar.show();
+                        mref.child("Users").child(Phone).child("Vote").setValue("1");
 
                         mref.child("Users").child(Phone).child("Party").setValue("Party3").addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
