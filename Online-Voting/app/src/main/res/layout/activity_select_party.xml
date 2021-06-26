@@ -49,7 +49,7 @@
         android:layout_below="@+id/FirstParty"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_45sdp"
-        android:text="@string/jdu"
+        android:text="Tejashwi Yadav"
         android:textColor="@color/dark"
         android:textSize="@dimen/_14sdp"
         android:fontFamily="@font/roboto_medium"
