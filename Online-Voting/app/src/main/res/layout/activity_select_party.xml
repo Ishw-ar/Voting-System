@@ -52,7 +52,7 @@
             android:elevation="@dimen/_10sdp"
             android:layout_alignParentStart="true"
             android:layout_height="@dimen/_40sdp"
-            android:text="Tejashwi"
+            android:text="RJD"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_weight="1"
             android:layout_marginTop="@dimen/_20sdp"
@@ -78,7 +78,7 @@
             app:neumorph_backgroundColor="#009193"
             android:layout_weight="1"
             android:scaleType="center" />
-        <soup.neumorphism.NeumorphTextView
+        <TextView
             android:id="@+id/tvpressed"
             style="@style/Widget.Neumorph.TextView"
             android:layout_width="wrap_content"
@@ -88,8 +88,8 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_30sdp"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/dark"
             android:textSize="@dimen/_10sdp"
             android:fontFamily="@font/roboto_bold"/>
         </RelativeLayout>
@@ -124,7 +124,7 @@
                 android:elevation="@dimen/_10sdp"
                 android:layout_alignParentStart="true"
                 android:layout_height="@dimen/_40sdp"
-                android:text="Rahul"
+                android:text="INC"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_weight="1"
                 android:layout_marginTop="@dimen/_20sdp"
@@ -150,7 +150,7 @@
                 app:neumorph_backgroundColor="#009193"
                 android:layout_weight="1"
                 android:scaleType="center" />
-            <soup.neumorphism.NeumorphTextView
+            <TextView
                 android:id="@+id/tvpressedone"
                 style="@style/Widget.Neumorph.TextView"
                 android:layout_width="wrap_content"
@@ -161,7 +161,7 @@
                 android:layout_marginEnd="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_30sdp"
                 android:layout_centerHorizontal="true"
-                android:textColor="@color/dark"
+                android:textColor="@color/white"
                 android:textSize="@dimen/_10sdp"
                 android:fontFamily="@font/roboto_bold"/>
         </RelativeLayout>
@@ -195,7 +195,7 @@
                 android:elevation="@dimen/_10sdp"
                 android:layout_alignParentStart="true"
                 android:layout_height="@dimen/_40sdp"
-                android:text="Giriraj"
+                android:text="BJP"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_weight="1"
                 android:layout_marginTop="@dimen/_20sdp"
@@ -221,7 +221,7 @@
                 app:neumorph_backgroundColor="#009193"
                 android:layout_weight="1"
                 android:scaleType="center" />
-            <soup.neumorphism.NeumorphTextView
+            <TextView
                 android:id="@+id/tvpressedTwo"
                 style="@style/Widget.Neumorph.TextView"
                 android:layout_width="wrap_content"
@@ -232,7 +232,7 @@
                 android:layout_marginEnd="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_30sdp"
                 android:layout_centerHorizontal="true"
-                android:textColor="@color/dark"
+                android:textColor="@color/white"
                 android:textSize="@dimen/_10sdp"
                 android:fontFamily="@font/roboto_bold"/>
         </RelativeLayout>
@@ -266,7 +266,7 @@
                 android:elevation="@dimen/_10sdp"
                 android:layout_alignParentStart="true"
                 android:layout_height="@dimen/_40sdp"
-                android:text="Nitish"
+                android:text="JDU"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_weight="1"
                 android:layout_marginTop="@dimen/_20sdp"
@@ -292,7 +292,7 @@
                 app:neumorph_backgroundColor="#009193"
                 android:layout_weight="1"
                 android:scaleType="center" />
-            <soup.neumorphism.NeumorphTextView
+            <TextView
                 android:id="@+id/tvpressedThree"
                 style="@style/Widget.Neumorph.TextView"
                 android:layout_width="wrap_content"
@@ -303,7 +303,77 @@
                 android:layout_marginEnd="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_30sdp"
                 android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/roboto_bold"/>
+        </RelativeLayout>
+    </soup.neumorphism.NeumorphCardView>
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/layout_nota"
+        android:layout_below="@+id/layout_nitish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:neomorph_background_color="@color/white"
+        app:neomorph_corner_radius="10dp"
+        app:neumorph_backgroundColor="@color/white"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:neomorph_elevation="12dp"
+        app:neomorph_highlight_color="@color/highlight"
+        app:neomorph_shadow_color="@color/shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/tvnameNota"
+                style="@style/Widget.Neumorph.TextView"
+                android:layout_width="wrap_content"
+                android:elevation="@dimen/_10sdp"
+                android:layout_alignParentStart="true"
+                android:layout_height="@dimen/_40sdp"
+                android:text="NOTA"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:textColor="@color/dark"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/roboto_medium"/>
+            <ImageView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_centerInParent="true"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_weight="1"
+                android:src="@drawable/notalogo"/>
+
+            <soup.neumorphism.NeumorphFloatingActionButton
+                android:id="@+id/FifthParty"
+                style="@style/ShapeAppearance.Neumorph.FloatingActionButton"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                app:neumorph_shapeType="flat"
+                android:contextClickable="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:neumorph_backgroundColor="#009193"
+                android:layout_weight="1"
+                android:scaleType="center" />
+            <TextView
+                android:id="@+id/tvpressedFive"
+                style="@style/Widget.Neumorph.TextView"
+                android:layout_width="wrap_content"
+                android:elevation="@dimen/_10sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="press here"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
                 android:textSize="@dimen/_10sdp"
                 android:fontFamily="@font/roboto_bold"/>
         </RelativeLayout>

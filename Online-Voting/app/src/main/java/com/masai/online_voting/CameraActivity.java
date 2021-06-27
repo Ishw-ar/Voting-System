@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Rect;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -24,6 +25,10 @@ import com.google.firebase.ml.vision.face.FirebaseVisionFaceDetector;
 import com.google.firebase.ml.vision.face.FirebaseVisionFaceDetectorOptions;
 import com.masai.online_voting.Helper.GraphicOverlay;
 import com.masai.online_voting.Helper.RectOverlay;
+import com.thecode.aestheticdialogs.AestheticDialog;
+import com.thecode.aestheticdialogs.DialogAnimation;
+import com.thecode.aestheticdialogs.DialogStyle;
+import com.thecode.aestheticdialogs.DialogType;
 import com.wonderkiln.camerakit.CameraKitError;
 import com.wonderkiln.camerakit.CameraKitEvent;
 import com.wonderkiln.camerakit.CameraKitEventListener;
@@ -166,7 +171,13 @@ public class CameraActivity extends AppCompatActivity {
         }
         else if(check.equals("0"))
         {
-            Toast.makeText(this, "No Face Found", Toast.LENGTH_LONG).show();
+            new AestheticDialog.Builder(CameraActivity.this, DialogStyle.EMOTION, DialogType.ERROR)
+                    .setTitle("Don't be shy")
+                    .setMessage("Please come in-front of camera.")
+                    .setDarkMode(false)
+                    .setAnimation(DialogAnimation.DIAGONAL)
+                    .setGravity(Gravity.BOTTOM)
+                    .show();
         }
         else
         {
