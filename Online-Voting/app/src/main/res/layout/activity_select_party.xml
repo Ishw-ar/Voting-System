@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:clipChildren="false"
     android:background="#ebf2f0"
     tools:context=".RegisterActivity">
@@ -26,55 +23,289 @@
         />
 
 
-    <soup.neumorphism.NeumorphFloatingActionButton
-        android:id="@+id/FirstParty"
-        style="@style/ShapeAppearance.Neumorph.FloatingActionButton"
-        android:layout_width="@dimen/_100sdp"
-        android:layout_height="@dimen/_100sdp"
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/layout_jdu"
         android:layout_below="@+id/tvSelectUser"
-        android:layout_marginStart="@dimen/_40sdp"
-        android:layout_marginTop="96dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:neomorph_background_color="@color/white"
+        app:neomorph_corner_radius="10dp"
+        app:neumorph_backgroundColor="@color/white"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:neomorph_elevation="12dp"
+        app:neomorph_highlight_color="@color/highlight"
+        app:neomorph_shadow_color="@color/shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
 
-        android:scaleType="center"
-        android:src="@drawable/google" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+            <soup.neumorphism.NeumorphTextView
+            android:id="@+id/tvjduname"
+            style="@style/Widget.Neumorph.TextView"
+            android:layout_width="wrap_content"
+            android:elevation="@dimen/_10sdp"
+            android:layout_alignParentStart="true"
+            android:layout_height="@dimen/_40sdp"
+            android:text="Tejashwi"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/roboto_medium"/>
+        <ImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_centerInParent="true"
+            android:layout_height="@dimen/_60sdp"
+           android:layout_weight="1"
+            android:src="@drawable/lamps"/>
 
-    <soup.neumorphism.NeumorphFloatingActionButton
-        android:id="@+id/SecondParty"
-        style="@style/ShapeAppearance.Neumorph.FloatingActionButton"
-        android:layout_width="@dimen/_100sdp"
-        android:layout_height="@dimen/_100sdp"
-        android:layout_below="@+id/tvSelectUser"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="@dimen/_40sdp"
-        android:layout_toEndOf="@+id/FirstParty"
-        android:scaleType="center"
-        android:src="@drawable/google" />
+        <soup.neumorphism.NeumorphFloatingActionButton
+            android:id="@+id/FirstParty"
+            style="@style/ShapeAppearance.Neumorph.FloatingActionButton"
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_75sdp"
+            app:neumorph_shapeType="flat"
+            android:contextClickable="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:neumorph_backgroundColor="#009193"
+            android:layout_weight="1"
+            android:scaleType="center" />
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/tvpressed"
+            style="@style/Widget.Neumorph.TextView"
+            android:layout_width="wrap_content"
+            android:elevation="@dimen/_10sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:text="press here"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/roboto_bold"/>
+        </RelativeLayout>
+    </soup.neumorphism.NeumorphCardView>
 
-    <soup.neumorphism.NeumorphFloatingActionButton
-        android:id="@+id/ThirdParty"
-        style="@style/ShapeAppearance.Neumorph.FloatingActionButton"
-        android:layout_width="@dimen/_100sdp"
-        android:layout_height="@dimen/_100sdp"
-        android:layout_below="@+id/tvSelectUser"
-        android:layout_marginStart="@dimen/_40sdp"
-        android:layout_marginTop="226dp"
-        android:scaleType="center"
-        android:src="@drawable/google" />
 
-    <soup.neumorphism.NeumorphFloatingActionButton
-        android:id="@+id/FourthParty"
-        style="@style/ShapeAppearance.Neumorph.FloatingActionButton"
-        android:layout_width="@dimen/_100sdp"
-        android:layout_height="@dimen/_100sdp"
-        android:layout_below="@+id/tvSelectUser"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="@dimen/_40sdp"
-        android:layout_marginTop="226dp"
-        android:layout_toEndOf="@+id/FirstParty"
-        android:scaleType="center"
-        android:src="@drawable/google" />
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/layout_congress"
+        android:layout_below="@+id/layout_jdu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:neomorph_background_color="@color/white"
+        app:neomorph_corner_radius="10dp"
+        app:neumorph_backgroundColor="@color/white"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:neomorph_elevation="12dp"
+        app:neomorph_highlight_color="@color/highlight"
+        app:neomorph_shadow_color="@color/shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/tvcongresname"
+                style="@style/Widget.Neumorph.TextView"
+                android:layout_width="wrap_content"
+                android:elevation="@dimen/_10sdp"
+                android:layout_alignParentStart="true"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Rahul"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/roboto_medium"/>
+            <ImageView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_centerInParent="true"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_weight="1"
+                android:src="@drawable/handscong"/>
+
+            <soup.neumorphism.NeumorphFloatingActionButton
+                android:id="@+id/SecondParty"
+                style="@style/ShapeAppearance.Neumorph.FloatingActionButton"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                app:neumorph_shapeType="flat"
+                android:contextClickable="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:neumorph_backgroundColor="#009193"
+                android:layout_weight="1"
+                android:scaleType="center" />
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/tvpressedone"
+                style="@style/Widget.Neumorph.TextView"
+                android:layout_width="wrap_content"
+                android:elevation="@dimen/_10sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="press here"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/roboto_bold"/>
+        </RelativeLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/layout_bjp"
+        android:layout_below="@+id/layout_congress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:neomorph_background_color="@color/white"
+        app:neomorph_corner_radius="10dp"
+        app:neumorph_backgroundColor="@color/white"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:neomorph_elevation="12dp"
+        app:neomorph_highlight_color="@color/highlight"
+        app:neomorph_shadow_color="@color/shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/tvbjpname"
+                style="@style/Widget.Neumorph.TextView"
+                android:layout_width="wrap_content"
+                android:elevation="@dimen/_10sdp"
+                android:layout_alignParentStart="true"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Giriraj"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/roboto_medium"/>
+            <ImageView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_centerInParent="true"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_weight="1"
+                android:src="@drawable/downloads"/>
+
+            <soup.neumorphism.NeumorphFloatingActionButton
+                android:id="@+id/ThirdParty"
+                style="@style/ShapeAppearance.Neumorph.FloatingActionButton"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                app:neumorph_shapeType="flat"
+                android:contextClickable="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:neumorph_backgroundColor="#009193"
+                android:layout_weight="1"
+                android:scaleType="center" />
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/tvpressedTwo"
+                style="@style/Widget.Neumorph.TextView"
+                android:layout_width="wrap_content"
+                android:elevation="@dimen/_10sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="press here"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/roboto_bold"/>
+        </RelativeLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/layout_nitish"
+        android:layout_below="@+id/layout_bjp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:neomorph_background_color="@color/white"
+        app:neomorph_corner_radius="10dp"
+        app:neumorph_backgroundColor="@color/white"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:neomorph_elevation="12dp"
+        app:neomorph_highlight_color="@color/highlight"
+        app:neomorph_shadow_color="@color/shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/tvbjpnameTwo"
+                style="@style/Widget.Neumorph.TextView"
+                android:layout_width="wrap_content"
+                android:elevation="@dimen/_10sdp"
+                android:layout_alignParentStart="true"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Nitish"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/roboto_medium"/>
+            <ImageView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_centerInParent="true"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_weight="1"
+                android:src="@drawable/nitish"/>
+
+            <soup.neumorphism.NeumorphFloatingActionButton
+                android:id="@+id/FourthParty"
+                style="@style/ShapeAppearance.Neumorph.FloatingActionButton"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                app:neumorph_shapeType="flat"
+                android:contextClickable="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:neumorph_backgroundColor="#009193"
+                android:layout_weight="1"
+                android:scaleType="center" />
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/tvpressedThree"
+                style="@style/Widget.Neumorph.TextView"
+                android:layout_width="wrap_content"
+                android:elevation="@dimen/_10sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="press here"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/roboto_bold"/>
+        </RelativeLayout>
+    </soup.neumorphism.NeumorphCardView>
 </RelativeLayout>
-
-
-
