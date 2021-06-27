@@ -20,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import soup.neumorphism.NeumorphFloatingActionButton;
 
 public class SelectParty extends AppCompatActivity {
-    NeumorphFloatingActionButton Party1,Party2,Party3;
+    NeumorphFloatingActionButton Party1,Party2,Party3,Party4,Party5;
     private DatabaseReference mref;
     private ProgressDialog LoadingBar;
     String Phone;
@@ -32,6 +32,8 @@ public class SelectParty extends AppCompatActivity {
         Party1=findViewById(R.id.FirstParty);
         Party2=findViewById(R.id.SecondParty);
         Party3=findViewById(R.id.ThirdParty);
+        Party4=findViewById(R.id.FourthParty);
+        Party5=findViewById(R.id.FifthParty);
         Intent i=getIntent();
         Phone=i.getStringExtra("phone");
         mref= FirebaseDatabase.getInstance().getReference();
@@ -43,7 +45,7 @@ public class SelectParty extends AppCompatActivity {
 
                 final AlertDialog.Builder builder=new AlertDialog.Builder(SelectParty.this);
                 builder.setTitle("Confirm Your Party");
-                builder.setMessage("Do you want to give your vote to Party1");
+                builder.setMessage("Do you want to give your vote to RJD");
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -89,7 +91,7 @@ public class SelectParty extends AppCompatActivity {
             public void onClick(View view) {
                 final AlertDialog.Builder builder=new AlertDialog.Builder(SelectParty.this);
                 builder.setTitle("Confirm Your Party");
-                builder.setMessage("Do you want to give your vote to Party2");
+                builder.setMessage("Do you want to give your vote to INC");
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -131,7 +133,91 @@ public class SelectParty extends AppCompatActivity {
             public void onClick(View view) {
                 final AlertDialog.Builder builder=new AlertDialog.Builder(SelectParty.this);
                 builder.setTitle("Confirm Your Party");
-                builder.setMessage("Do you want to give your vote to Party3");
+                builder.setMessage("Do you want to give your vote to BJP");
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        LoadingBar.setTitle("Voting Inprogress");
+                        LoadingBar.setMessage("Please wait..");
+                        LoadingBar.setCanceledOnTouchOutside(false);
+                        LoadingBar.show();
+                        mref.child("Users").child(Phone).child("Vote").setValue("1");
+
+                        mref.child("Users").child(Phone).child("Party").setValue("Party3").addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+
+                                Intent i=new Intent(SelectParty.this,FinalActivity.class);
+                                i.putExtra("phone",Phone);
+                                i.putExtra("partyname","Party 3");
+
+                                startActivity(i);
+
+                                LoadingBar.dismiss();
+                                Toast.makeText(SelectParty.this, "Your Vote is Submitted to our database..", Toast.LENGTH_LONG).show();
+                            }
+                        });
+                    }
+                });
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        dialog.cancel();
+                    }
+                });
+                builder.show();
+            }
+        });
+        Party4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final AlertDialog.Builder builder=new AlertDialog.Builder(SelectParty.this);
+                builder.setTitle("Confirm Your Party");
+                builder.setMessage("Do you want to give your vote to JDU");
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        LoadingBar.setTitle("Voting Inprogress");
+                        LoadingBar.setMessage("Please wait..");
+                        LoadingBar.setCanceledOnTouchOutside(false);
+                        LoadingBar.show();
+                        mref.child("Users").child(Phone).child("Vote").setValue("1");
+
+                        mref.child("Users").child(Phone).child("Party").setValue("Party3").addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+
+                                Intent i=new Intent(SelectParty.this,FinalActivity.class);
+                                i.putExtra("phone",Phone);
+                                i.putExtra("partyname","Party 3");
+
+                                startActivity(i);
+
+                                LoadingBar.dismiss();
+                                Toast.makeText(SelectParty.this, "Your Vote is Submitted to our database..", Toast.LENGTH_LONG).show();
+                            }
+                        });
+                    }
+                });
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        dialog.cancel();
+                    }
+                });
+                builder.show();
+            }
+        });
+        Party5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final AlertDialog.Builder builder=new AlertDialog.Builder(SelectParty.this);
+                builder.setTitle("Confirm Your Party");
+                builder.setMessage("Do you really want to press NOTA!!");
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Online-Voting</string>
+    <string name="app_name">eVoting</string>
     <string name="create_your_account_here">Create Your Account Here</string>
     <string name="create_account">Create Account</string>
     <string name="login_account">Login To Your Account</string>
