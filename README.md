@@ -1,10 +1,8 @@
 # eVoting (Online Voting System) 📱
 
-**eVoting** is a Online Voting System application.
+**eVoting** is an Online Voting System application.
 
-Considering the current COVID-19 Pandemic we have tried to make a **eVoting** Application. so, that Everyone can vote from their respective places.
-With our efforts and the technology stack, that we have learned so far in the masai school, we were able to make Aadhaar Card Verifcation and
-Face Detection and Biometric Authentication in 48 hours during the Hackathon.
+Considering the current COVID-19 Pandemic we have tried to make an eVoting Application. so, that Everyone can vote from their respective places. With our efforts and the technology stack, that we have learned so far in the Masai school, we were able to make Aadhaar Card Verification and Face Detection, and Biometric Authentication in 48 hours during the Hackathon.
 
 # Technology Stack Used 📲
 
@@ -35,9 +33,9 @@ Please fork the repository and then use it on your own. If you want to collabora
 
 You can also take the glimpse of our Project, just follow the below steps:
 
-    1.Clone the repository in your system and open in Android Studio.
+    1.Clone the repository in your system and open it in Android Studio.
 
-    2.Build the gradle and install the app in your device and you will land in the landing page then Enter Valid Aadhaar Number After that Register
+    2.Build the Gradle and install the app on your device and you will land on the landing page then Enter Valid Aadhaar Number After that Register
     and login if you have signed up before or do the signup.
 
 <br>
